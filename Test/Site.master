@@ -1,0 +1,51 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+        <%: Scripts.Render("~/bundles/Jquery") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+
+</head>
+<body>
+    <form>
+        
+        <div id="wrapper">
+
+            <!-- Header -->
+            <div id="header">
+	            <a href="/Default.aspx" title="Home"><img src="/Leaderboard_files/logo.png"></a>
+            </div>
+
+            <!-- Main Navigation -->
+            <div id="nav">
+	            <a href="/CreateGame.aspx" title="Create Game">
+                    <img src="/Leaderboard_files/create_game.png" alt="Create Game">
+	            </a> 
+                <a href="/JoinGame.aspx" title="Join Existing Game">
+                    <img src="/Leaderboard_files/join_game.png" alt="Join Existing Game">
+                </a>
+            </div>
+            
+            <!-- Content -->
+            
+
+        </div>              
+        <div class="container body-content">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+            
+           
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,38 @@
+﻿
+@charset "UTF-8";
+                 #nav,#subnav{clear:both;width:100%;text-align:center}
+                 body,html{width:100%;margin:0;padding:0}
+                 body{font-family:'Helvetica Neue',Helvetica,Arial,san-serif;font-weight:200}
+                 #content .form label,p.description{font-weight:500}
+                 h1{font-size:2em}
+                 h2{font-size:1.3em}p{font-size:1.25em}
+                 p.description{color:#03a9d2}.errors{color:red;font-size:.75em}
+                 a,a:link,a:visited{color:#03a9d2;text-decoration:none}
+                 a:focus,a:hover{color:#ef5b01;text-decoration:none}
+                 a.active,a:active{color:#03a9d2}
+                 #wrapper{float:left;clear:both;width:100%;margin:0 auto}
+                 #header{clear:both;margin:10px auto;width:200px;height:118px;display:block}
+                 #nav,#subnav{margin:0 auto}
+                 #nav{height:43px;padding:10px 0;background-color:#313e43}
+                 #nav img{padding:0 5px}
+                 #subnav{height:23px;padding:10px 0;background-color:#b5e1ec}
+                 #subnav .nav_items{margin:0 auto;width:329px;text-align:left}
+                 #subnav .nav_items .item{float:left;margin-right:10px}
+                 #content .form,#content .list_games,#standings{margin:0 auto;font-size:1.2em;text-align:left;clear:both}
+                 #content{clear:both;margin:20px auto;width:300px;text-align:left}
+                 #content .form{width:300px}
+                 #content .form .row{clear:both;width:300px;padding:10px 0}
+                 #content .form input,#content .form textarea{font-weight:200;width:300px;padding:4px 0}
+                 #content .form input.submit{width:184px;padding:0}
+                 #content .list_games{width:300px}
+                 #content .list_games .row{clear:both;width:300px;padding:5px 0}
+                 #content .list_games .action{float:left;width:85px}
+                 #content .list_games .game{float:left;width:155px;font-weight:500}
+                 #content .list_games .players{float:right;width:50px}
+                 #standings{width:300px}#standings .player{clear:both;height:3em}
+                 #add_scores .player_score .updated_player_name,#standings .name{float:left;width:200px;padding:4px 0}
+                 #add_scores .player_score .score,#standings .score{float:left;width:100px;font-weight:700;color:#777;padding:4px 0;text-align:right}
+                 #add_scores{clear:both;margin:20px auto 0;width:300px;border-top:dashed;border-color:#CCC;border-width:4px;text-align:left}
+                 #add_scores .player_name{margin:10px 0;font-size:1.25em;font-weight:700}#add_scores .player_score{clear:both;margin:10px 0}
+                 #add_scores .player_score .updated_player_name{font-size:1.25em;font-weight:700;margin-top:10px}
+                 .btn { background-image:url(../Leaderboard_files/submit.png);float:left;background-size: 100% 100%;background-repeat: no-repeat;height:50px;width: 150px;}
