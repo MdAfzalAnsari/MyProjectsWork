@@ -1,0 +1,134 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+    .counterbg {
+	    font-family: Verdana, Arial, Helvetica, sans-serif;
+	    font-size: 13px;
+	    font-weight: bold;
+	    color: #FFFFFF;
+    }
+    </style>
+    
+    
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <link href="css/accord.css" rel="stylesheet" type="text/css" />
+    <link href="css/demo.css" rel="stylesheet" type="text/css" />
+    <script src="js/deon.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <script type="text/javascript" src="js/gradualfader.js"></script>
+    <script src="js/skdslider.min.js" type="text/javascript"></script>
+    <link href="css/skdslider.css" rel="stylesheet"/>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#demo1').skdslider({ 'delay': 5000, 'fadeSpeed': 2000, 'autoStart': true, 'pauseOnHover': true });
+        });
+    </script>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="header">
+    <div class="headernav">
+    <a href="Alumini.aspx" class="link1">Alumni</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="photogallery.aspx" class="link1">Photo Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="" class="link1">Video Gallery</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="VirtualTour.aspx" class="link1">Virtual Tour</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Journals.aspx" class="link1">Journals</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="Result.aspx" class="link1">Results</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="PrincipalMessage.aspx" class="link1">Principal Message Corner</a>&nbsp;&nbsp;&nbsp;&nbsp;
+    <a href="usefullink.aspx" class="link1">Useful Links</a>&nbsp;&nbsp;&nbsp;</div>
+    <div class="logoanimation">
+        <div id="demo1"  class="skdslider" runat="server">
+                <ul id="ul1"  runat="server">
+                <%--<li>
+                <img height="285" src="slides/1.gif" alt=""/>
+                </li>
+                <li><img height="285" src="slides/2.gif" alt=""/>
+                </li>
+                <li><img height="285" src="slides/3.gif" alt="" />
+                <!--NO Description Here-->
+                </li>
+                <li><img height="285" src="slides/4.gif" alt=""/>
+                </li>
+                <li><img height="285" src="slides/5.gif" alt=""/></li>
+                <li><img height="285" src="slides/6.gif"alt="" />
+
+                </li>--%>
+                </ul>
+        </div>
+    </div>
+    
+
+<div class="collhead">
+    <div><span class="fontcollheadr">Popatlal Dhanjibhai Malaviya College of Commerce</span></div>
+    <div>Yr Estd.: 1957</div>
+    <div class="accre">Accredited by NAAC with "A" Grade</div>
+    <div><img src="images/star1.gif" height="30" width="30"/><img src="images/star1.gif" height="30" width="30"/><img src="images/star1.gif" height="30" width="30"/><img src="images/star1.gif" height="30" width="30"/><img src="images/star1.gif" height="30" width="30"/></div>
+</div>
+<div class="sitelogo"><img class="siteimage" src="images/right_logo.jpg" alt=""/></div>
+   <%--<div class="pagetabs">
+            <div class="pgsection"><a href="AddNavLink.aspx" class="Addleftlink">Add New link </a> </div>
+            <div class="pgsection"><a href="ManageImages.aspx" class="Addleftlink">Manage Images </a></div>
+            <div class="pgsection"><a href="DeleteNavLink.aspx" class="Addleftlink">Manage links </a> </div>
+            <div class="pgsection"><a href="DeleteNavLink.aspx" class="Addleftlink">Manage Profile </a>   </div>
+    </div>--%>
+<%--<div class="pagetabs">
+<div class="pgsection"><a href="#" class="pglinks">Alumini</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Photo Manangement</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Video Manangement</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Virtual Manangement</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Journals</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Results</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Principal Message</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Usefull links</a></div>
+</div>--%>
+</div>
+    <div class="content">
+        
+        <div class="leftcontent">
+           <div class="navigation">	                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+
+            <ul id="leftlink" runat="server">
+	  		    <%--<li><a href="http://www.pdmcc.org/SAKASHAT.php">SAKASHAT</a></li>
+	  		    <li class="act"><a href="http://www.pdmcc.org/index.php">Home</a></li>
+	  		    <li><a href="http://www.pdmcc.org/about.php">About College</a></li>
+	  		    <li><a href="http://www.pdmcc.org/courses.php">Our Courses </a></li>
+	  		    <li><a href="http://www.pdmcc.org/brochure.php">Brochure</a></li>
+	  		    <li><a href="http://www.pdmcc.org/academiccalendat.php">Academic Calendar</a></li>
+	  		    <li><a href="http://www.pdmcc.org/staff.php">Our Staff </a></li>
+	  		    <li><a href="http://www.pdmcc.org/feedback.php">Feedback</a></li>
+	  		    <li><a href="http://www.pdmcc.org/admission.php">Admission</a></li>
+	  		    <li><a href="http://www.pdmcc.org/facilities.php">Facilities</a></li>
+	  		    <li><a href="http://www.pdmcc.org/activities.php"> Activities</a></li>
+	  		    <li><a href="http://www.pdmcc.org/ncc.php">NCC Camp</a></li>
+	  		    <li><a href="http://www.pdmcc.org/nss.php">NSS <font color="red" size="1"><blink>&nbsp;&nbsp;New</blink></font></a></li>
+	  		    <li><a href="http://www.pdmcc.org/download.php"> Downloads</a></li>
+	  		    <li><a href="http://www.pdmcc.org/contact.php">Contact Us</a></li>
+	  		    <li><a href="http://www.pdmcc.org/DownloadPapers.php">DOWNLOAD PAPERS</a></li>--%>
+	  	    </ul>
+          </div>
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+        <div class="rightnavlinks">
+            <ul id="rightlinks" runat="server"></ul>
+        </div>
+        </div>
+        <div class="footer">   
+        <span class="rigths">All rights Reserved At PDMCC</span>
+        </div>  
+    </form>
+</body>
+<script type="text/javascript">
+    gradualFader.init() //activate gradual fader
+</script>
+</html>

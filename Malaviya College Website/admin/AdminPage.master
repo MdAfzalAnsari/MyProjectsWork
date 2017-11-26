@@ -1,0 +1,79 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="AdminPage.master.cs" Inherits="AdminPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <style type="text/css">
+    .counterbg {
+	    font-family: Verdana, Arial, Helvetica, sans-serif;
+	    font-size: 13px;
+	    font-weight: bold;
+	    color: #FFFFFF;
+    }
+    </style>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <link href="css/accord.css" rel="stylesheet" type="text/css" />
+    <link href="css/demo.css" rel="stylesheet" type="text/css" />
+    <script src="js/deon.js" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css" type="text/css"/>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    
+    
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div class="header">
+<div class="sitelogo"><img class="siteimage" src="images/right_logo.jpg" alt=""/></div>
+<div class="collhead">
+<div><span class="fontcollheadr">Popatlal Dhanjibhai Malaviya College of Commerce</span></div>
+<div>  		Yr Estd.: 1957</div>
+<div class="accre">Accredited by NAAC with "A" Grade</div>
+
+
+	</div>
+    <div class="pagetabs">
+            <div class="pgsection"><a href="AddNavLink.aspx" class="Addleftlink">Add New link </a> </div>
+            <div class="pgsection"><a href="ManageImages.aspx" class="Addleftlink">Manage Images </a></div>
+            <div class="pgsection"><a href="ManageNavLink.aspx" class="Addleftlink">Manage links </a> </div>
+            <div class="pgsection"><a href="ManageJournals.aspx" class="Addleftlink">Manage Journals </a>   </div>
+            <div class="pgsection"><a href="ManageSubjArticle.aspx" class="Addleftlink">Manage Sub-Journals </a>   </div>
+            <div class="pgsection"><a href="Default.aspx" class="Addleftlink">Home page </a>   </div>
+    </div>
+<%--<div class="pagetabs">
+<div class="pgsection"><a href="#" class="pglinks">Alumini</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Photo Manangement</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Video Manangement</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Virtual Manangement</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Journals</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Results</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Principal Message</a></div>
+<div class="pgsection"><a href="#" class="pglinks">Usefull links</a></div>
+</div>--%>
+</div>
+    <div class="content">
+        <%--<div class="contenthead">home</div>--%>
+        <div class="leftcontent">
+            <div class="navigation">	                 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+                        <div id="accordian">
+                            
+	                        <ul id="leftlink" runat="server">
+		                        
+		            
+	                        </ul>
+                        </div>
+                    </div>
+        </div>
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+            
+        </asp:ContentPlaceHolder>
+        </div>
+        <div class="footer">   
+        <span class="rigths">All rights Reserved At PDMCC</span>
+        </div>  
+    </form>
+</body>
+</html>
